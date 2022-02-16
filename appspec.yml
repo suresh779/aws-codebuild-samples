@@ -16,7 +16,7 @@ hooks:
       runas: ec2-user
   ApplicationStop:
     - location: deploy_scripts/stop.sh
-      runas: ec2-user
+      runas: /root
   ApplicationStart:
     - location: deploy_scripts/start.sh
       runas: ec2-user
